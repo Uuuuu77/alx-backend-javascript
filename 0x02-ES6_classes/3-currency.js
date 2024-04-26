@@ -1,4 +1,4 @@
-// eslint-disable class-methods-use-this
+/* eslint-disable class-methods-use-this */
 
 export default class Currency {
   constructor(code, name) {
