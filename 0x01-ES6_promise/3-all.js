@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/extensions.
+// eslint-disable-next-line import/extensions
 import { uploadPhoto, createUser } from './utils';
 
 export default function handleProfileSignup() {
