@@ -1,0 +1,3 @@
+# TypeScript
+
+TypeScript is a superset of JavaScript that adds optional static typing to the language, providing developers with enhanced tooling, error detection, and code maintainability. By introducing features like interfaces, classes, generics, and advanced type inference, TypeScript enables developers to write more scalable and reliable code while still enjoying the flexibility and expressiveness of JavaScript. With its seamless integration into existing JavaScript projects and support for modern development workflows, TypeScript has become a popular choice for building web applications, server-side code, and even mobile apps using frameworks like Angular and React.
