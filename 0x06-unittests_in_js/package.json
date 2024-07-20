@@ -9,6 +9,8 @@
   "author": "John Njuguna",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "chai": "^4.4.1",
+    "sinon": "^17.0.1"
   }
 }
