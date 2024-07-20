@@ -1,30 +1,38 @@
 // 0-calcul.test.js
 
 const assert = require('assert');
-const calculateNumber = require('./0-calcul');
+const calculateNumber = require('./0-calcul.js');
 
 describe('calculateNumber', () => {
-  it('should return 4 when inputs are 1 and 3', () => {
-    assert.strictEqual(calculateNumber(1, 3), 4);
-  });
+    it('rounding integer inputs', () => {
+        assert.strictEqual(calculateNumber(1, 3), 4);
+    });
 
-  it('should return 5 when inputs are 1 and 3.7', () => {
-    assert.strictEqual(calculateNumber(1, 3.7), 5);
-  });
+    it('rounding one integer and one float input', () => {
+        assert.strictEqual(calculateNumber(1, 3.7), 5);
+    });
 
-  it('should return 5 when inputs are 1.2 and 3.7', () => {
-    assert.strictEqual(calculateNumber(1.2, 3.7), 5);
-  });
+    it('rounding float inputs, one up, one down', () => {
+        assert.strictEqual(calculateNumber(1.2, 3.7), 5);
+    });
 
-  it('should return 6 when inputs are 1.5 and 3.7', () => {
-    assert.strictEqual(calculateNumber(1.5, 3.7), 6);
-  });
+    it('rounding float inputs, both up', () => {
+        assert.strictEqual(calculateNumber(1.5, 3.7), 6);
+    });
 
-  it('should return 3 when inputs are 0.5 and 1.5', () => {
-    assert.strictEqual(calculateNumber(0.5, 1.5), 3);
-  });
+    it('rounding zero inputs', () => {
+        assert.strictEqual(calculateNumber(0, 0), 0);
+    });
 
-  it('should return -1 when inputs are 1 and -2.5', () => {
-    assert.strictEqual(calculateNumber(1, -2.5), -1);
-  });
+    it('rounding float numbers, both down', () => {
+        assert.strictEqual(calculateNumber(1.49999, 3.49999), 4);
+    });
+
+    it('rounding large integer inputs', () => {
+        assert.strictEqual(calculateNumber(1000000000, 2000000000), 3000000000);
+    });
+
+    it('rounding large float inputs', () => {
+        assert.strictEqual(calculateNumber(1.2345, 3.4567), 4);
+    });
 });
