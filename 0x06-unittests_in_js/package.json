@@ -1,3 +1,14 @@
-"scripts": {
-  "test": "mocha"
+{
+  "name": "unittests-in-js",
+  "version": "1.0.0",
+  "description": "Testing with Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "John Njuguna",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
